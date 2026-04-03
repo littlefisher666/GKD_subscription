@@ -17,9 +17,9 @@ apps.forEach((appConfig) => {
 
 export default defineGkdSubscription({
   id: 18760,
-  name: 'LittleFisher的GKD订阅',
+  name: 'littlefisher666的GKD订阅',
   version: 0,
-  author: 'littlefisher666',
+  author: 'LittleFisher',
   checkUpdateUrl: './gkd.version.json5',
   supportUri:
     'https://github.com/littlefisher666/GKD_subscription/issues/new/choose',
@@ -27,4 +27,3 @@ export default defineGkdSubscription({
   globalGroups,
   apps: rawApps,
 });
-// trigger build_release
