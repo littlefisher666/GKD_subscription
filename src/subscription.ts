@@ -19,7 +19,7 @@ export default defineGkdSubscription({
   id: 18760,
   name: 'littlefisher666的GKD订阅',
   version: 0,
-  author: 'LittleFisher',
+  author: 'littlefisher666',
   checkUpdateUrl: './gkd.version.json5',
   supportUri:
     'https://github.com/littlefisher666/GKD_subscription/issues/new/choose',

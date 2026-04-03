@@ -9,7 +9,7 @@ export default defineGkdGlobalGroups([
   {
     key: 0,
     name: '开屏广告-全局',
-    desc: '自动关闭打开应用时的开屏广告',
+    desc: '关闭打开应用时的开屏广告',
     order: OPEN_AD_ORDER,
     fastQuery: true,
     matchTime: 10000,
