@@ -92,7 +92,7 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         if: ${{ steps.commit.outcome == 'success' && env.NPM_TOKEN != '' }}
         run: |
-          pnpm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
           node -e "import('@gkd-kit/tools').then((m) => m.updatePkgVersion());"
-          pnpm publish --no-git-checks
+          pnpm publish --no-git-checks --access public
           node -e "import('@gkd-kit/tools').then((m) => m.syncNpmmirror());"
