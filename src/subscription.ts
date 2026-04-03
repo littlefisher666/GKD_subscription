@@ -16,12 +16,13 @@ apps.forEach((appConfig) => {
 });
 
 export default defineGkdSubscription({
-  id: 666,
-  name: 'AIsouler的GKD订阅-已停止维护',
+  id: 18760,
+  name: 'littlefisher666的GKD订阅',
   version: 0,
-  author: 'AIsouler',
-  checkUpdateUrl: './AIsouler_gkd.version.json5',
-  supportUri: 'https://github.com/AIsouler/GKD_subscription/issues/new/choose',
+  author: 'littlefisher666',
+  checkUpdateUrl: './gkd.version.json5',
+  supportUri:
+    'https://github.com/littlefisher666/GKD_subscription/issues/new/choose',
   categories,
   globalGroups,
   apps: rawApps,
