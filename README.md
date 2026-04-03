@@ -38,7 +38,7 @@ https://registry.npmmirror.com/@littlefisher666/gkd_subscription/latest/files/di
 https://raw.githubusercontent.com/littlefisher666/GKD_subscription/main/dist/gkd.json5
 ```
 
-- 当前版本: v2
+- 当前版本: v3
 
 - 当前订阅文件已适配 68 个应用，共有 406 应用规则组，3 全局规则组
 
