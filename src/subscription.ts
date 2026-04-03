@@ -27,3 +27,4 @@ export default defineGkdSubscription({
   globalGroups,
   apps: rawApps,
 });
+// trigger build_release
