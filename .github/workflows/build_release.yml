@@ -88,11 +88,11 @@ jobs:
           body_path: ./dist/CHANGELOG.md
 
       - name: Publish package
-        if: ${{ secrets.NPM_TOKEN != '' }}
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        if: ${{  env.NPM_TOKEN != '' }}
         run: |
-          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> .npmrc
+          pnpm config set //registry.npmjs.org/:_authToken ${{ env.NPM_TOKEN }}
           node -e "import('@gkd-kit/tools').then((m) => m.updatePkgVersion());"
           pnpm publish --no-git-checks
           node -e "import('@gkd-kit/tools').then((m) => m.syncNpmmirror());"
