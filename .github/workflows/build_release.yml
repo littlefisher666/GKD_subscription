@@ -46,6 +46,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 25
+          registry-url: 'https://registry.npmjs.org'
 
       - uses: pnpm/action-setup@v4
 
@@ -89,10 +90,9 @@ jobs:
 
       - name: Publish package
         env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        if: ${{  env.NPM_TOKEN != '' }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        if: ${{ env.NODE_AUTH_TOKEN != '' }}
         run: |
-          pnpm config set //registry.npmjs.org/:_authToken ${{ env.NPM_TOKEN }}
           node -e "import('@gkd-kit/tools').then((m) => m.updatePkgVersion());"
           pnpm publish --no-git-checks
           node -e "import('@gkd-kit/tools').then((m) => m.syncNpmmirror());"
