@@ -26,10 +26,10 @@
 
 复制以下任意一个链接到 GKD 即可使用本订阅规则
 
-- npmmirror源（国内镜像，推荐大陆用户使用）
+- jsdelivr源（国内镜像，推荐大陆用户使用）
 
 ```txt
-https://registry.npmmirror.com/@littlefisher666/gkd_subscription/latest/files/dist/gkd.json5
+https://cdn.jsdelivr.net/gh/littlefisher666/GKD_subscription@main/dist/gkd.json5
 ```
 
 - GitHub源
