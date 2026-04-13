@@ -2,7 +2,7 @@ import { defineGkdApp } from '@gkd-kit/define';
 
 export default defineGkdApp({
   id: 'me.ele',
-  name: '饿了么',
+  name: '淘宝闪购',
   groups: [
     {
       key: 1,
