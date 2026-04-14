@@ -88,7 +88,7 @@ jobs:
           body_path: ./dist/CHANGELOG.md
 
       - name: sync jsDelivr
-        # if: ${{ steps.commit.outcome == 'success' }}
+        if: ${{ steps.commit.outcome == 'success' }}
         run: |
-          curl -X PUT 'https://purge.jsdelivr.net/gh/littlefisher666/GKD_subscription@main/dist/gkd.json5'
-          curl -X PUT 'https://purge.jsdelivr.net/gh/littlefisher666/GKD_subscription@main/dist/gkd.version.json5'
+          curl 'https://purge.jsdelivr.net/gh/littlefisher666/GKD_subscription@latest/dist/gkd.json5'
+          curl 'https://purge.jsdelivr.net/gh/littlefisher666/GKD_subscription@latest/dist/gkd.version.json5'

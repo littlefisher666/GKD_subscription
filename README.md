@@ -29,7 +29,7 @@
 - jsdelivr源（国内镜像，推荐大陆用户使用）
 
 ```txt
-https://cdn.jsdelivr.net/gh/littlefisher666/GKD_subscription@main/dist/gkd.json5
+https://cdn.jsdelivr.net/gh/littlefisher666/GKD_subscription@latest/dist/gkd.json5
 ```
 
 - GitHub源
