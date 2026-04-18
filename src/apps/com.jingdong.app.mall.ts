@@ -108,6 +108,13 @@ export default defineGkdApp({
           matches: '@[clickable=true] + [text^="打开系统通知"]',
           snapshotUrls: 'https://i.gkd.li/i/12839865',
         },
+        {
+          key: 2,
+          activityIds: 'com.jingdong.app.mall.MainFrameActivity',
+          matches:
+            '@[desc="关闭"][clickable=true] -n * > [text="开启消息通知"]',
+          snapshotUrls: 'https://i.gkd.li/i/26850344',
+        },
       ],
     },
     {
@@ -174,6 +181,13 @@ export default defineGkdApp({
           matches: '[text^="惊喜福利来袭"][visibleToUser=true]',
           exampleUrls: 'https://e.gkd.li/580d3cb5-503e-47a9-ba88-056e91c2f084',
           snapshotUrls: 'https://i.gkd.li/i/17974166',
+        },
+        {
+          key: 4,
+          fastQuery: true,
+          activityIds: 'com.jingdong.app.mall.MainFrameActivity',
+          matches: '[text="立即使用"] + @[clickable=true] > [desc="关闭"]',
+          snapshotUrls: 'https://i.gkd.li/i/26850353',
         },
       ],
     },
