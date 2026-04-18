@@ -115,6 +115,12 @@ export default defineGkdApp({
             '@[desc="关闭"][clickable=true] -n * > [text="开启消息通知"]',
           snapshotUrls: 'https://i.gkd.li/i/26850344',
         },
+        {
+          key: 3,
+          activityIds: 'com.jingdong.app.mall.MainFrameActivity',
+          matches: '@[desc="关闭"][clickable=true] +n [text^="打开系统通知"]',
+          snapshotUrls: 'https://i.gkd.li/i/26850453',
+        },
       ],
     },
     {
