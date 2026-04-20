@@ -314,7 +314,7 @@ export default defineGkdApp({
     {
       key: 24,
       name: '全屏广告-视频推荐广告',
-      desc: '通过向上滑动跳过广告',
+      desc: '通过返回滑动跳过广告',
       rules: [
         {
           key: 0,
