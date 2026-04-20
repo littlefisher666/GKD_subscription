@@ -326,13 +326,12 @@ export default defineGkdApp({
         {
           key: 1,
           fastQuery: true,
-          action: 'back',
-          // action: 'swipe',
-          // swipeArg: {
-          //   start: { x: 'screenWidth * 0.2', y: 'screenHeight * 0.8' },
-          //   end: { x: 'screenWidth * 0.2', y: 'screenHeight * 0.7' },
-          //   duration: 50,
-          // },
+          // action: 'back',
+          swipeArg: {
+            start: { x: 'screenWidth * 0.5', y: 'screenHeight * 0.7' },
+            end: { x: 'screenWidth * 0.5', y: 'screenHeight * 0.3' },
+            duration: 250,
+          },
           activityIds: '.main.MainActivity',
           matches: [
             '[desc^="已选中"] > [text="推荐"][visibleToUser=true]', // 其他页面可能会误触回到推荐页
