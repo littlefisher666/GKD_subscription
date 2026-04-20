@@ -314,7 +314,7 @@ export default defineGkdApp({
     {
       key: 24,
       name: '全屏广告-视频推荐广告',
-      desc: '通过返回操作跳过广告',
+      desc: '通过向上滑动跳过广告',
       rules: [
         {
           key: 0,
@@ -326,7 +326,12 @@ export default defineGkdApp({
         {
           key: 1,
           fastQuery: true,
-          action: 'back',
+          action: 'swipe',
+          swipeArg: {
+            start: { x: 'screenWidth * 0.2', y: 'screenHeight * 0.8' },
+            end: { x: 'screenWidth * 0.2', y: 'screenHeight * 0.7' },
+            duration: 50,
+          },
           activityIds: '.main.MainActivity',
           matches: [
             '[desc^="已选中"] > [text="推荐"][visibleToUser=true]', // 其他页面可能会误触回到推荐页
