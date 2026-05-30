@@ -336,7 +336,7 @@ export default defineGkdApp({
               x: 'screenWidth/2',
               y: 'screenHeight*0.3',
             },
-            duration: 300,
+            duration: 120,
           },
           activityIds: '.main.MainActivity',
           matches: [
