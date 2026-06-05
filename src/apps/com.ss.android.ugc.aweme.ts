@@ -341,7 +341,7 @@ export default defineGkdApp({
           activityIds: '.main.MainActivity',
           matches: [
             '[desc^="已选中"] > [text="推荐"][visibleToUser=true]', // 其他页面可能会误触回到推荐页
-            '([text*="广告"][vid="desc"][visibleToUser=true]) || (ImageView[childCount=0] + [text="应用" || text="购物" || text="游戏"][visibleToUser=true]) || ([text="立即去玩"][visibleToUser=true] && [text="上滑继续看视频"][visibleToUser=true])',
+            '([text*="广告"][vid="desc"][visibleToUser=true]) || (ImageView[childCount=0] + [text="应用" || text="购物" || text="游戏"][visibleToUser=true])',
           ],
           snapshotUrls: [
             'https://i.gkd.li/i/21142063',
@@ -350,8 +350,30 @@ export default defineGkdApp({
             'https://i.gkd.li/i/21142871',
             'https://i.gkd.li/i/26850199',
             'https://i.gkd.li/i/26850207',
-            'https://i.gkd.li/i/28630789',
           ],
+        },
+        {
+          key: 2,
+          fastQuery: true,
+          action: 'swipe',
+          swipeArg: {
+            start: {
+              x: 'screenWidth/2',
+              y: 'screenHeight*0.7',
+            },
+            end: {
+              x: 'screenWidth/2',
+              y: 'screenHeight*0.3',
+            },
+            duration: 120,
+          },
+          activityIds: '.main.MainActivity',
+          matches: [
+            '[desc^="已选中"] > [text="推荐"][visibleToUser=true]', // 其他页面可能会误触回到推荐页
+            '[text="立即去玩"][visibleToUser=true]',
+            '[text="上滑继续看视频"][visibleToUser=true]',
+          ],
+          snapshotUrls: ['https://i.gkd.li/i/28630789'],
         },
       ],
     },
