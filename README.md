@@ -38,9 +38,9 @@ https://cdn.jsdelivr.net/gh/littlefisher666/GKD_subscription@latest/dist/gkd.jso
 https://raw.githubusercontent.com/littlefisher666/GKD_subscription/main/dist/gkd.json5
 ```
 
-- 当前版本: v16
+- 当前版本: v17
 
-- 当前订阅文件已适配 63 个应用，共有 398 应用规则组，3 全局规则组
+- 当前订阅文件已适配 63 个应用，共有 411 应用规则组，3 全局规则组
 
 - 查看 [适配 APP 列表](./dist/README.md)
 
